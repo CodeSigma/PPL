@@ -1,0 +1,18 @@
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar{
+      width:100%;
+      background-color: #F23443;
+  }
+
+  .mainpage{
+    /* padding: 1000px; */
+    
+    margin-left: 258px;
+    height:98vh;
+    background-color: grey;
+
+  }

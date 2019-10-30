@@ -1,0 +1,25 @@
+.bgimage{
+    background-image: url("../img/undip-bg.jpg");
+    background-size: 120%;
+    filter: blur(2px);
+    
+
+    
+
+}
+
+.sia{
+    text-align: center; 
+    margin-top:200px;
+    transform:translate(-10%, -1500%);
+    
+}
+
+.login{
+    background-color: lightgray;
+    
+}
+
+.row > div, .bgimage{
+    height:98vh;
+}
