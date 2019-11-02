@@ -10,7 +10,7 @@ if($_POST){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = mysqli_query($db,"SELECT * FROM user WHERE username='$username' and user.password='$password'");
+    $query = mysqli_query($db,"SELECT * FROM mahasiswa WHERE NIM='$username' and mahasiswa.password='$password'");
     $check = mysqli_num_rows($query);
 
     
@@ -18,17 +18,22 @@ if($_POST){
     if($check > 0){
    
         $data = mysqli_fetch_assoc($query);
-        $_SESSION['id_user'] = $data["id_user"];
-        if($data['level'] == '1'){
+        $_SESSION['NIM'] = $data["NIM"];
+        if($username == '1'){
             // Create Session
-            $_SESSION['username'] = "$username";
+            $_SESSION['username'] = "admin";
             $_SESSION['level'] = "1";
             session_write_close();
             header("Location: admin/main.php");
-        }else if($data['level'] == '2'){  
-            $_SESSION['username'] = "$username";
+        }else if($data['NIM'] == $username){  
+            $_SESSION['username'] = $username;
             $_SESSION['level'] = "2";
+            // print_r($_SESSION['username']);
             session_write_close();
+            ?>
+            
+
+            <?php
             header("Location: mahasiswa/main.php");
         }
     }else{

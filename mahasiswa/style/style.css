@@ -9,10 +9,28 @@ body {
   }
 
   .mainpage{
-    /* padding: 1000px; */
-    
+
+    overflow: auto;
     margin-left: 258px;
     height:98vh;
     background-color: grey;
 
+  }
+
+  .mainform{
+
+    height:98vh;
+    background-color: grey;
+  }
+
+  .profil-edit{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .profil-edit img{
+    width:200px;
+    align:center;
+    margin: 0px; 
+    
   }
