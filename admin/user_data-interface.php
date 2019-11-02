@@ -3,24 +3,22 @@
 <?php
         require_once("../database/db_login.php");
         $id = $_POST['input'];
-        print_r($_POST);
 ?>
         <div class="row">
             
             <div class="col-xl-3"></div>
             <div class="col-xl-6 mainform">
-                <form method="POST" action="user_data-insert.php?">
+                <form method="POST" action="user_data-insert.php">
                     <table class="table table-light user_data-interface">
                     <tbody>
                             <tr>
                             <td colspan=3 align="center">
                             <img class="img-fluid" src="img/profile-default.png" alt="">
-                            </td>
-                            </tr>
+                        </tr>
                             <tr>
                                 <td>NAMA</td>
                                 <td>:</td>
-                                <td><input class="form-control" type="text" name="password" value=""></td>
+                                <td><input class="form-control" type="text" name="nama" value=""></td>
                             </tr>
                             <tr>
                                 <td>NIM</td>
