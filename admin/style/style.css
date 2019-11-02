@@ -16,3 +16,19 @@ body {
     background-color: grey;
 
   }
+
+  .search{
+    margin-top: 10px;
+  }
+
+  .mid{
+    background-color: #fff;
+    height: 98vh;
+  }
+
+  .user_data-interface img{
+    width:200px;
+    align:center;
+    margin: 0px; 
+    
+  }
