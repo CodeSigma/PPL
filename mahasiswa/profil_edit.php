@@ -72,9 +72,7 @@
                                 <td><input class="form-control" type="text" name="wali-hp" value="<?php echo $data['hp_wali']; ?>"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td><button name="submit" id="" class="btn btn-primary" type="submit">Simpan</button></td>
+                                <td colspan=3 align="right"><button name="submit" id="" class="btn btn-primary" type="submit">Simpan</button></td>
                             </tr>
                         </tbody> 
                     </table>    
