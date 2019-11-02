@@ -14,7 +14,7 @@
         ?>
         <div class="row">
             
-            <div class="col-xl-2"></div>
+            <div class="col-xl-3"></div>
             <div class="col-xl-6 mainform">
                 <?php echo '<form method="POST" action="profil_update.php?NIM='.$nim.'">'; ?>
                     <table class="table table-light profil-edit">
@@ -79,7 +79,7 @@
                 </form>
             </div>
 
-            <div class="col-xl-2"></div>
+            <div class="col-xl-3"></div>
         </div>
 
 <?php include "footer.php" ?>
