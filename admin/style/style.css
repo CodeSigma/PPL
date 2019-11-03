@@ -19,6 +19,7 @@ body {
 
   .search{
     margin-top: 10px;
+    /* width: 200px; */
   }
 
   .mid{
@@ -28,7 +29,8 @@ body {
 
   .user_data-interface img{
     width:200px;
-    align:center;
     margin: 0px; 
     
   }
+
+
