@@ -1,7 +1,7 @@
 <?php include "header.php" ?>
 
 <?php
-        require_once("../database/db_login.php");
+        require_once("../../database/db_login.php");
         if($_POST){
             $id = $_POST['id'];
         }

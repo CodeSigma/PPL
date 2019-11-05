@@ -2,7 +2,7 @@
 
     if($_POST){
         print_r($_POST);
-        require_once "../database/db_login.php";
+        require_once "../../database/db_login.php";
         $id = $_POST['id'];
 
 
