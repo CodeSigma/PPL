@@ -1,25 +1,123 @@
-.bgimage{
-    background-image: url("../img/undip-bg.jpg");
-    background-size: 120%;
-    filter: blur(2px);
-    
-
-    
-
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.sia{
-    text-align: center; 
-    margin-top:200px;
-    transform:translate(-10%, -1500%);
-    
+body {
+    margin: 0;
 }
 
-.login{
-    background-color: lightgray;
-    
+::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-style: italic;
+    padding-left: 5px;
 }
 
-.row > div, .bgimage{
-    height:98vh;
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    display: flex;
+}
+
+.left,
+.right {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left {
+    width: 70%;
+    background: url(../images/bgleft.jpg);
+    background-attachment: fixed;
+    background-size: 72% 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right {
+    width: 30%;
+    background: #48c6d7;
+}
+
+.left h1 {
+    width: 70%;
+}
+
+.right img {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+
+form {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:nth-child(-n+2) {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 10%;
+    color: white;
+    outline: none;
+    width: 75%;
+    max-width: 280px;
+    margin-top: 4%;
+    font-size: 120%;
+}
+
+.checkbox {
+    width: 75%;
+    height: 10%;
+    display: flex;
+    margin-top: 2%;
+}
+
+.checkbox span {
+    margin-top: 2.8%;
+    margin-left: -33%;
+    color: white;
+}
+
+input[type=checkbox] {
+    height: 50%;
+    position: relative;
+    margin-left: -33%;
+    filter: hue-rotate(18deg) brightness(3);
+    cursor: pointer;
+}
+
+input[type=submit] {
+    border: none;
+    width: 30%;
+    height: 12%;
+    max-width: 100px;
+    margin-right: -45%;
+    margin-top: 5%;
+    background: #07738f;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 740px) {
+    .left {
+        width: 50%;
+        background-size: 120% 100%;
+        background-position-x: -150px;
+    }
+    .right {
+        width: 50%;
+    }
+    .left h1 {
+        width: 100%;
+        font-size: 120%;
+    }
 }
