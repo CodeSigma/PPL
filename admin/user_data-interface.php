@@ -1,7 +1,7 @@
 <?php include "header.php" ?>
 
 <?php
-        require_once("../../database/db_login.php");
+        require_once("../database/db_login.php");
         if($_POST){
             $id = $_POST['id'];
         }
@@ -42,7 +42,7 @@
             
             <div class="col-xl-3"></div>
             <div class="col-xl-6 mainform">
-                <form method="POST" action="user_data-insert.php">
+                <form method="POST" action="user_data-edit.php">
                     <table class="table table-light user_data-interface">
                     <tbody>
                             <tr>

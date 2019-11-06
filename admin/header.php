@@ -12,7 +12,8 @@
 </head>
 <body>
 <div class="row">
-    <?php session_start() ?>
+
+    <?php session_start();?>
     <div class="col-xl-2 sidebar">
         <?php include "sidebar.php" ?>
     </div>

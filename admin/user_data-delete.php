@@ -1,6 +1,6 @@
 <?php
 
-    require_once "../../database/db_login.php";
+    require_once "../database/db_login.php";
 
     $id = $_GET['id'];
     $query = "DELETE FROM mahasiswa WHERE NIM = {$id}";

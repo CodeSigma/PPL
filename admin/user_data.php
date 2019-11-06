@@ -1,6 +1,6 @@
-<?php include "../header.php" ?>
+<?php include "header.php" ?>
 <div class="col-xl-12 search">
-    <form method="POST" action="user_data-interface.php">
+    <form method="POST" action="user_data-input.php">
         <input class="form-control input-search" type="text" name="id" size="30">
         <button type="submit" class="btn btn-primary">Input</button>
     </form>
@@ -10,7 +10,7 @@
 
 
     <?php
-        require_once "../../database/db_login.php";
+        require_once "../database/db_login.php";
         $query = "SELECT * FROM mahasiswa";
 
         $result = mysqli_query($db, $query);
@@ -47,4 +47,4 @@
 </div>
 </div>
 
-<?php include "../footer.php" ?>
+<?php include "footer.php" ?>
