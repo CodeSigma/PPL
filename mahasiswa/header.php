@@ -12,7 +12,14 @@
 </head>
 <body>
 <div class="row">
-    <?php session_start() ?>
+    <?php session_start();
+    session_write_close();
+    if($_SESSION['level'] != "2"){
+        header('Location: not_found');
+    }
+    
+    
+    ?> ?>
     <div class="col-xl-2 sidebar">
         <?php include "sidebar.php" ?>
     </div>

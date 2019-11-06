@@ -27,7 +27,7 @@ if($_POST){
             $_SESSION['username'] = "admin";
             $_SESSION['level'] = "1";
             session_write_close();
-            header("Location: admin/main.php");
+            header("Location: admin");
         }else if($data['NIM'] == $username){  
             $_SESSION['username'] = $username;
             $_SESSION['level'] = "2";
@@ -37,7 +37,7 @@ if($_POST){
             
 
             <?php
-            header("Location: mahasiswa/main.php");
+            header("Location: mahasiswa");
         }
     }else{
         

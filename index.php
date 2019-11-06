@@ -10,7 +10,7 @@
             <!-- <img src="./images/bgleft.jpeg" alt="backgambar"> -->
         </div>
         <div class="right">
-            <img src="img/undip-logo.png" alt="logo">
+        <img src="img/undip-logo.png" alt="logo">
             <form method="POST" action="login_session.php">
                 <input type="text" name="username" placeholder="username">
                 <input type="password" name="password" placeholder="password">
