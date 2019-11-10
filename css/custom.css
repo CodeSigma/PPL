@@ -54,6 +54,11 @@ body {
     margin-bottom: 10%;
 }
 
+.top {
+    witdh: 100%;
+    background: #07738f;
+}
+
 form {
     height: 40%;
     display: flex;
