@@ -1,4 +1,6 @@
 <?php include "header.php" ?>
+<?php include "profile.css"?>
+<?php include "sidebar.css"?>
 
 <?php
 
