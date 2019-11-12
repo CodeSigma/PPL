@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "admin/header.php"?>
 
 <?php
         require_once("../../database/db_login.php");
