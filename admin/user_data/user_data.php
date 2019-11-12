@@ -1,4 +1,5 @@
-<?php include "../header.php" ?>
+<?php include_once "../main.php" ?>
+
 <div class="col-xl-12 search">
     <form method="POST" action="user_data-interface.php">
         <input class="form-control input-search" type="text" name="id" size="30">
@@ -6,8 +7,6 @@
     </form>
     
     <div class="row">
-        
-
 
     <?php
         require_once "../../database/db_login.php";
