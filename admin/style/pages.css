@@ -6,7 +6,21 @@ body {
     font-family: arial;
 }
 
-
+table {
+    position: fixed;
+    top: 150px;
+    bottom: 0;
+    right: 0px;
+    left: 220px;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid#f2f5f7;
+}
+table thead {
+    background: #35A9DB;
+    color: #fff;
+    font-weight: normal;
+}
 
 img {
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;

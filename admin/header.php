@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="style/pages.css">
-    <script src="js/jquery.js"></script>
+<link rel="stylesheet" href="https://localhost/PPL/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://localhost/PPL/admin/style/pages.css">
+<script src="js/jquery.js"></script>
     <title>SIA Undip</title>
 </head>
 
@@ -14,10 +14,10 @@
     <div class="header">
         <div class="menu">
         <?php session_start() ?>
-        <img src="images/menu.png" alt="menu">
+        <img src="https://localhost/PPL/admin/images/menu.png" alt="menu">
         </div>
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="https://localhost/PPL/admin/images/logo.png" alt="logo">
             <p>UNIVERSITAS DIPONEGORO</p>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <html>
 <head>
-    <link rel="stylesheet" href="style/pages.css">
-    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://localhost/PPL/admin/style/pages.css">
+    <script src="../js/jquery.js"></script>
     <title>SIA Undip</title>
 </head>
 
@@ -9,7 +9,7 @@
   <div class="wrapper">
         <div class="nav-side">
             <div class="bio">
-                <img src="images/profil.png" alt="profil">
+                <img src="https://localhost/PPL/admin/images/profil.png" alt="profil">
                 <div class="paragraf">
 
                     <span class="row">
@@ -21,21 +21,21 @@
             <div class="nav-menu">
                 <div class="sub-menu">
                     <div class="index"></div>
-                    <img src="images/toga.png" alt="icon">
+                    <img src="https:localhost/PPL/admin/images/toga.png" alt="icon">
                     <a href="jadwal.php">Jadwal</a>
                     <div class="segitiga"></div>
                 </div>
 
                 <div class="sub-menu">
                     <div class="index"></div>
-                    <img src="images/setting.png" alt="icon">
+                    <img src="https://localhost/PPL/admin/images/setting.png" alt="icon">
                     <a href="user_data/user_data.php">User Data</a>
                     <div class="segitiga"></div>
                 </div>
 
                 <div class="sub-menu">
                     <div class="index"></div>
-                    <img src="images/logout1.png" alt="icon">
+                    <img src="https://localhost/PPL/admin/images/logout1.png" alt="icon">
                     <a href="../logout.php">Logout</a>
                     <div class="segitiga"></div>
                 </div>

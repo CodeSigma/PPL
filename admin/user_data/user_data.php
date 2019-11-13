@@ -1,14 +1,16 @@
-<?php include_once "../main.php" ?>
+<?php include "../header.php"; ?>
+<?php include "../sidebar.php"; ?>
 
-<div class="col-xl-12 search">
+<div class="row">
     <form method="POST" action="user_data-interface.php">
         <input class="form-control input-search" type="text" name="id" size="30">
         <button type="submit" class="btn btn-primary">Input</button>
     </form>
+</div>    
     
-    <div class="row">
+<div class="row">
 
-    <?php
+        <?php
         require_once "../../database/db_login.php";
         $query = "SELECT * FROM mahasiswa";
 
@@ -18,13 +20,14 @@
             die ("Query Error");
             mysqli_error();
         }
-    ?>
+        ?>
         
         <table class="table table-light">
             <thead>
                 <th>NIM</th>
                 <th>Nama</th>
                 <th>Alamat</th>
+                <th>Opsi</th>
             </thead>
             <tbody>
         <?php
@@ -42,8 +45,4 @@
         ?>
     </tbody>
     </table>
-
 </div>
-</div>
-
-<?php include "../footer.php" ?>
