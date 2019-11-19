@@ -4,15 +4,11 @@
         require_once("../database/db_login.php");
         if($_POST){
             $id = $_POST['id'];
-            $query = "SELECT * FROM mahasiswa WHERE NIM = '{$id}'";
-            $result = mysqli_query($db, $query);
-            if(mysqli_num_rows($result) > 0){
-                header("Location: user_data.php?alert=1");
-            }
         }
         if($_GET){
             $id = $_GET['id'];
         }
+        $id = '12345';
         $query = "SELECT * FROM mahasiswa WHERE NIM = '{$id}'";
         $result = mysqli_query($db, $query);
         if(!$result){
@@ -43,12 +39,8 @@
         }
 ?>
             <div class="form">
-            <?php if($_GET){
-                echo '<form method="POST" action="user_data-edit.php">';
-            }else{
-                echo '<form method="POST" action="user_data-insert.php">';
-            }?>
-            <table class="table form-interface">
+            <form method="POST" action="user_data-insert.php">
+            <table class="table user_data-interface">
                     <tbody>
                         <tr>
                             <td colspan=3 align="center">
@@ -62,7 +54,7 @@
                         <tr>
                             <td>NIM</td>
                             <td>:</td>
-                            <td><input name="NIM" class="form-control" type="text" value="<?php echo $id; ?>" readonly></td>
+                            <td><input name="NIM" class="form-control" type="text" value="<?php echo $id; ?>" ></td>
 
                             
                         </tr>
@@ -102,11 +94,20 @@
                             <td><input class="form-control" type="text" name="wali-hp" value="<?php echo $hp_wali; ?>"></td>
                         </tr>
                         <tr>
-                            <td colspan=3 align="right"><button name="submit" id="" class="btn btn-primary" type="submit">Simpan</button></td>
+                            <td colspan=3><button name="submit" id="" class="btn btn-primary" type="submit">Simpan</button></td>
                         </tr>
                     </tbody> 
                  </table>     
             </form>
             </div>
-            
+
+
+
+            <script>
+            var a = <?php echo $_GET['id'];?>;
+            document.addEventListener('DOMContentLoaded',function(){
+                alert(a);
+
+            });
+            </script>
 <?php include "footer.php" ?>

@@ -16,7 +16,6 @@ body {
 .wrapper {
     width: 100%;
     height: 100vh;
-    background: red;
     display: flex;
 }
 
@@ -40,7 +39,7 @@ body {
 
 .right {
     width: 30%;
-    background: #48c6d7;
+    background: linear-gradient(#48c6d7, #3981bd, #3981bd);
 }
 
 .left h1 {
@@ -52,11 +51,6 @@ body {
     margin-left: 35%;
     margin-top: 25%;
     margin-bottom: 10%;
-}
-
-.top {
-    witdh: 100%;
-    background: #07738f;
 }
 
 form {
@@ -95,7 +89,7 @@ input:nth-child(-n+2) {
 input[type=checkbox] {
     height: 50%;
     position: relative;
-    margin-left: -33%;
+    margin-left: -30%;
     filter: hue-rotate(18deg) brightness(3);
     cursor: pointer;
 }
@@ -115,8 +109,8 @@ input[type=submit] {
 @media only screen and (max-width: 740px) {
     .left {
         width: 50%;
-        background-size: 120% 100%;
-        background-position-x: -150px;
+        background-size: 125% 100%;
+        background-position-x: -160px;
     }
     .right {
         width: 50%;
@@ -124,5 +118,8 @@ input[type=submit] {
     .left h1 {
         width: 100%;
         font-size: 120%;
+    }
+    input[type=checkbox] {
+        margin-left: -33%;
     }
 }

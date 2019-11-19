@@ -1,58 +1,42 @@
+<div class="wrapper">
         <div class="nav-side">
             <div class="bio">
-                <img src="images/profil.png" alt="profil">
+                <img src="../images/profil.png" alt="profil">
                 <div class="paragraf">
 
                     <span class="row">
-                        <a href="main.php">Obed Syaiful Aprilia</a>
+                        <a href="main.php">Admin</a>
                     </span>
-                    <!-- <span class="row">
-                        <ipk>3.78</ipk> /
-                        <sks>23 SKS</sks>
-                    </span> -->
                 </div>
 
             </div>
             <div class="nav-menu">
                 <div class="sub-menu">
                     <div class="index"></div>
-                    <img src="images/toga.png" alt="icon">
-                    <a href="krs.php">KRS</a>
+                    <img src="../images/toga.png" alt="icon">
+                    <a href="jadwal.php">Jadwal</a>
                     <div class="segitiga"></div>
                 </div>
 
                 <div class="sub-menu">
                     <div class="index"></div>
-                    <img src="images/print.png" alt="icon">
-                    <a href="cetak.php">Cetak Jadwal</a>
+                    <img src="../images/setting.png" alt="icon">
+                    <a href="user_data.php">User Data</a>
                     <div class="segitiga"></div>
                 </div>
 
                 <div class="sub-menu">
                     <div class="index"></div>
-                    <img src="images/setting.png" alt="icon">
-                    <?php 
-                      echo '<a href="profil_edit.php?NIM='.$_SESSION['username'].'">Edit Profil</a>';
-                    ?> 
-                    <div class="segitiga"></div>
-                </div>
-
-                <div class="sub-menu">
-                    <div class="index"></div>
-                    <img src="images/logout1.png" alt="icon">
+                    <img src="../images/logout1.png" alt="icon">
                     <a href="../logout.php">Logout</a>
                     <div class="segitiga"></div>
                 </div>
+          </div>
+    </div>
+</div>
 
-                
-            </div>
-        </div>
-     
-
-
-
-    <!-- script togle menu -->
-    <!-- <script>
+<!-- script togle menu -->
+    <script>
         $(document).ready(() => {
             var status = false;
             $(".menu").click(() => {
@@ -81,4 +65,5 @@
                 status = false;
             })
         });
-    </script> -->
+    </script>
+  
