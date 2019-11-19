@@ -3,6 +3,7 @@
                 <img src="images/profil.png" alt="profil">
                 <div class="paragraf">
 
+<<<<<<< HEAD
                     <span class="row">
                         <a href="main.php">Obed Syaiful Aprilia</a>
                     </span>
@@ -82,3 +83,13 @@
             })
         });
     </script> -->
+=======
+  <a href="main.php">MAHASISWA</a>
+  <a href="krs.php">KRS</a>
+  <a href="cetak_jadwal.php" target="_blank">Cetak Jadwal</a>
+  <?php 
+  echo '<a href="profil_edit.php?NIM='.$_SESSION['username'].'">Edit Profil</a>';
+  ?>
+  
+  <a href="../logout.php">Logout</a>
+>>>>>>> 15a3f8951d1493ca0434b8ce89339efb32be2578
