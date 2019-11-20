@@ -13,7 +13,7 @@
 <title>Title</title>
 </head>
 <body>
-
+<?php require_once("../database/db_login.php");?>
 <div class="col-xl-12 head">
     <div class="menu">
         <?php session_start() ?>

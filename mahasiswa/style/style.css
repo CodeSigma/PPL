@@ -110,3 +110,24 @@
 .kelas{
   width:70px;
 }
+
+.krs-text{
+  text-align: center;
+  margin-top: 40px;
+}
+
+table {
+  /* position: fixed; */
+  top: 150px;
+  bottom: 0;
+  right: 0px;
+  left: 220px;
+  border-collapse: collapse;
+  width: 50%;
+  border: 1px solid#f2f5f7;
+}
+table thead {
+  background: #35A9DB !important;
+  color: #fff;
+  font-weight: normal;
+}
