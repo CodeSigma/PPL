@@ -12,8 +12,8 @@
         <div class="right">
             <img src="images/undip-logo.png" alt="logo">
             <form method="POST" action="login_session.php">
-                <input type="text" name="username" placeholder="username">
-                <input type="password" name="password" placeholder="password">
+                <input type="text" name="username" placeholder="username" required>
+                <input type="password" name="password" placeholder="password" required>
                 <input type="submit" value="login">
             </form>
         </div>

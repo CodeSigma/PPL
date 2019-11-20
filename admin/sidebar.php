@@ -26,6 +26,14 @@
 
             <div class="sub-menu">
                 <div class="index"></div>
+                <img src="../images/setting.png" alt="icon">
+                <a href="matkul.php">Mata Kuliah</a>
+                <div class="segitiga"></div>
+            </div>
+
+
+            <div class="sub-menu">
+                <div class="index"></div>
                 <img src="../images/logout1.png" alt="icon">
                 <a href="../logout.php">Logout</a>
                 <div class="segitiga"></div>

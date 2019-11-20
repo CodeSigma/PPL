@@ -94,7 +94,7 @@
                                     $query = "SELECT * FROM dosen";
                                     $result = mysqli_query($db, $query);
                                     while($row = mysqli_fetch_array($result)){
-                                        echo '<option value="'.$row['Kode_Dos'].'">'.$row['Nama'].'</option>';
+                                        echo '<option value="'.$row['Nama'].'">'.$row['Nama'].'</option>';
                                     }
                                     
                                 ?>

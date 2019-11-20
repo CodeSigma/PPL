@@ -90,8 +90,9 @@
 }
 
 .form{
-  margin-left: 500px;
+  margin-left: 300px;
 }
+
 
 
 .matkul-select{
@@ -102,4 +103,10 @@
 .matkul-select-btn{
   height:38px;
   margin-top:10px;
+}
+
+
+
+.kelas{
+  width:70px;
 }
