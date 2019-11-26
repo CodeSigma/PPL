@@ -1,7 +1,9 @@
 <?php include "header.php"; ?>
     
     <div class="col-xl-12">
-        <div class="col-xl-10  search">
+        <h1 style="text-align: center;">Daftar Pengguna</h1>
+        <div class="col-xl-10  search" style="margin-left: 60px;">
+            
             <form method="POST" action="user_data-interface.php">
                 <table>
                     <tr>

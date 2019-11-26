@@ -123,3 +123,9 @@ table thead {
   color: #fff;
   font-weight: normal;
 }
+
+a{
+  font-family: monospace;
+  color: #fff;
+  font-size: 20px;
+}

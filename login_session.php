@@ -28,7 +28,11 @@ if($_POST){
             $_SESSION['level'] = "1";
             session_write_close();
             header("Location: admin/main.php");
-        }else if($data['NIM'] == $username){  
+        }else if($data['NIM'] == $username){ 
+
+            $_SESSION['nama'] = $data['Nama'];
+
+
             $_SESSION['username'] = $username;
             $_SESSION['level'] = "2";
             // print_r($_SESSION['username']);

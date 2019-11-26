@@ -13,6 +13,7 @@
         
         ?>
         <div class="content">
+            <h1 style="text-align: center;">Profil Mahasiswa</h1>
             <div class="edit">
                 <img src="images/profil.png" alt="profil">
 
