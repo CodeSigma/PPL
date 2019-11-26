@@ -124,7 +124,7 @@ sks {
     cursor: pointer;
     padding-top: 6px;
     padding-bottom: 6px;
-}
+ }   
 
 .index {
     width: 5%;
@@ -156,7 +156,6 @@ sks {
 
 .content {
     background: #e9ebee;
-    width: 85%;
     height: 88vh;
     overflow-y: scroll;
 }

@@ -11,8 +11,7 @@
     padding:0px;
     margin-left: 0px;
     height:90vh;
-    background-color: grey;
-
+    background-color: white;
   }
 
   .search{
@@ -126,8 +125,15 @@ table {
   width: 50%;
   border: 1px solid#f2f5f7;
 }
+
 table thead {
   background: #35A9DB !important;
   color: #fff;
   font-weight: normal;
+}
+
+a{
+  font-family: monospace;
+  color: #fff;
+  font-size: 20px;
 }

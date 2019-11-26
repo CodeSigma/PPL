@@ -1,5 +1,5 @@
     
-        <div class="bio">
+<!--         <div class="bio">
             <img src="../images/profil.png" alt="profil">
             <div class="paragraf">
 
@@ -8,8 +8,15 @@
                 </span>
             </div>
 
-        </div>
+        </div> -->
+        
         <div class="nav-menu">
+            <div class="sub-menu">
+                <div class="index"></div>
+                <img src="../images/profil.png" alt="profil">
+                <a href="main.php">Admin</a>
+                <div class="segitiga"></div>
+            </div>
             <div class="sub-menu">
                 <div class="index"></div>
                 <img src="../images/toga.png" alt="icon">

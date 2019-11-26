@@ -1,19 +1,24 @@
         <div class="nav-side">
-            <div class="bio">
+          <!--   <div class="bio">
                 <img src="images/profil.png" alt="profil">
                 <div class="paragraf">
 
                     <span class="row">
-                        <a href="main.php">Obed Syaiful Aprilia</a>
-                    </span>
-                    <!-- <span class="row">
-                        <ipk>3.78</ipk> /
-                        <sks>23 SKS</sks>
-                    </span> -->
+                        <a href="main.php">Obed Syaiful</a>
                 </div>
+            </div> -->
 
-            </div>
             <div class="nav-menu">
+                 <div class="sub-menu">
+                    <div class="index"></div>
+                    <img src="images/profil.png" alt="profil">
+                    <a href="main.php">
+                        <?php 
+                        echo $_SESSION['nama'];
+                         ?>
+                    </a>
+                    <div class="segitiga"></div>
+                </div>
                 <div class="sub-menu">
                     <div class="index"></div>
                     <img src="images/toga.png" alt="icon">

@@ -9,7 +9,7 @@
     }
 
 ?>
-
+<h1 style="text-align: center;">Mata Kuliah</h1>
 <table class="table table-light">
     <thead>
         <th>Kode</th>

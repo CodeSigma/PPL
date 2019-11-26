@@ -13,7 +13,7 @@
     }
 
 ?>
-
+<h1 style="text-align: center;">Jadwal</h1>
 <table class="table table-light">
     <thead>
         <th>Kode</th>

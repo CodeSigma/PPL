@@ -19,7 +19,8 @@ body {
 }
 
 * {
-  font-family: arial;
+  font-family: monospace;
+  color : white;
 }
 
 /* table {
