@@ -8,17 +8,21 @@
             print_r($query);
             die("Query gagal". mysqli_connect_error());
         }
+        
+
         ?>
         <table class="table table-light">
-            <tr>
-            <th>No</th>
-            <th>Kode</th>
-            <th>Nama Matakuliah</th>
-            <th>SKS</th>
-            <th>Semester</th>
-            <th>Kelas</th>
-            <th>Action</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Nama Matakuliah</th>
+                    <th>SKS</th>
+                    <th>Semester</th>
+                    <th>Kelas</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
         <?php
         $count = 1;
         while($row = mysqli_fetch_array($result)){

@@ -8,7 +8,7 @@
         die("Query gagal");
         mysqli_error();
     }
-    header("Location: krs.php");
+    header("Location: krs.php?action='edit'");
 
 
 

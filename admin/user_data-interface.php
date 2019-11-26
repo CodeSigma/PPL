@@ -1,7 +1,19 @@
 <?php include "header.php"?>
 
 <?php
+
+
         require_once("../database/db_login.php");
+     
+     
+        // function check(){
+        //     $query = "SELECT * FROM mahassiwa WHERE NIM = '{$id}'"
+        //     $result = mysqli_query($db, $query);
+            
+        // }
+     
+     
+     
         if($_POST){
             $id = $_POST['id'];
             $query = "SELECT * FROM mahasiswa WHERE NIM = '{$id}'";
@@ -46,7 +58,7 @@
             <?php if($_GET){
                 echo '<form method="POST" action="user_data-edit.php">';
             }else{
-                echo '<form method="POST" action="user_data-insert.php">';
+                echo '<form method="POST" action="user_data-add.php">';
             }?>
             <table class="table form-interface">
                     <tbody>
@@ -108,5 +120,8 @@
                  </table>     
             </form>
             </div>
+
+
+
             
 <?php include "footer.php" ?>

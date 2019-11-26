@@ -5,6 +5,17 @@
 </head>
 
 <body>
+    <?php session_start();
+        if(isset($_SESSION['level'])){
+            if($_SESSION['level'] == '1'){
+                header("Location: admin/main.php");
+            }else{
+                header("Location: mahasiswa/main.php");
+            }
+        }
+
+
+    ?>
     
     <div class="wrapper">
         <div class="left">
@@ -21,7 +32,6 @@
         </div>
     </div>
     <?php
-    session_start();
     if(isset($_SESSION['wrong_pass'])){
         ?>
             <script>

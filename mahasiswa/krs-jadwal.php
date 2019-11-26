@@ -2,8 +2,8 @@
   
   
 ?>
-
-  <table class="table table-light">
+<h1 class="display-5 jadwal-text" align="center">JADWAL KULIAH</h1>
+  <table class="table table-light table-jadwal">
       <thead>
           <tr>
               <th>Hari</th>

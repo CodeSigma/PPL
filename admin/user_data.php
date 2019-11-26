@@ -22,8 +22,13 @@ if($_GET){
     if($_GET['alert'] == 1){
         ?>
         <script>
-            alert("ID sudah ada");
+            $(document).ready(function(){
+                alert('ID sudah terpakai');
+            });
         </script>
+        <!-- <script>
+            alert("ID sudah ada");
+        </script> -->
     <?php
     }
 }
@@ -54,8 +59,8 @@ while($row = mysqli_fetch_array($result)){
     echo '<td>'.$row['Nama'].'</td>';
     echo'<td>'.$row['Alamat'].'</td>';
     echo '
-    <td><a href="user_data-interface.php?id='.$row['NIM'].'">&nbsp Edit &nbsp</a> 
-    <a href="user_data-delete.php?id='.$row['NIM'].'">&nbsp Delete &nbsp</a></td>';
+    <td><a class ="btn btn-primary" href="user_data-interface.php?id='.$row['NIM'].'">&nbsp Edit &nbsp</a> 
+    <a class ="btn btn-primary" href="user_data-delete.php?id='.$row['NIM'].'">&nbsp Delete &nbsp</a></td>';
     echo '</tr>';
 }
 

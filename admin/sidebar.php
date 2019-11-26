@@ -33,7 +33,7 @@
 
             <div class="sub-menu">
                 <div class="index"></div>
-                <img src="../images/setting.png" alt="icon">
+                <img src="../images/matkul.png" alt="icon">
                 <a href="matkul.php">Mata Kuliah</a>
                 <div class="segitiga"></div>
             </div>
