@@ -40,10 +40,8 @@ if($_POST){
             header("Location: mahasiswa/main.php");
         }
     }else{
-        
-        
-       // header("Location: index.php");
-        session_write_close();
+        $_SESSION['wrong_pass'] = 1;
+        header("Location: index.php");
     }
 }
 ?>
