@@ -6,7 +6,7 @@
 <body>
     <div class="wrapper">
         <div class="left">
-            <h1>SISTEM INFORMASI AKADEMIK UNIVERSITAS DIPONEGORO</h1>
+            <h1>SISTEM INFORMASI AKADEMIK UNIVERSITAS DIPONEGORO BARU</h1>
             <!-- <img src="./images/bgleft.jpeg" alt="backgambar"> -->
         </div>
         <div class="right">
