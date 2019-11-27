@@ -33,13 +33,13 @@
                 echo '<td>'.$row['Kelas'].'</td>';
                 echo '<td>'.$row['Hari'].'</td>';
                 echo '<td>'.$row['Jam_Mulai'].'</td>';
-                if ($row['sks'] = 4){
-                    $endtime = strtotime("+200 minutes", strtotime($row['Jam_Mulai']));
+                if ($row['sks'] == 4){
+                    $endtime = strtotime("+100 minutes", strtotime($row['Jam_Mulai']));
                     echo '<td>'.date("H:i:s", $endtime).'</td>';
-                }else if ($row['sks'] = 3){
+                }else if ($row['sks'] == 3){
                     $endtime = strtotime("+150 minutes", strtotime($row['Jam_Mulai']));
                     echo '<td>'.date("H:i:s", $endtime).'</td>';
-                }else if ($row['sks'] = 2){
+                }else if ($row['sks'] == 2){
                     $endtime = strtotime("+100 minutes", strtotime($row['Jam_Mulai']));
                     echo '<td>'.date("H:i:s", $endtime).'</td>';
                 }
