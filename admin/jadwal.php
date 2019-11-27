@@ -5,7 +5,7 @@
 
 <?php
     require_once('../database/db_login.php');
-    $query = "SELECT * FROM jadwal";
+    $query = "SELECT * FROM jadwal join matakuliah where matakuliah.Kode_MK = jadwal.Kode_MK";
     $result = mysqli_query($db, $query);
     if(!$result){
         die("Query gagal");
@@ -33,7 +33,17 @@
                 echo '<td>'.$row['Kelas'].'</td>';
                 echo '<td>'.$row['Hari'].'</td>';
                 echo '<td>'.$row['Jam_Mulai'].'</td>';
-                echo '<td>'.$row['Jam_Mulai'].'</td>';
+                if ($row['sks'] = 4){
+                    $endtime = strtotime("+200 minutes", strtotime($row['Jam_Mulai']));
+                    echo '<td>'.date("H:i:s", $endtime).'</td>';
+                }else if ($row['sks'] = 3){
+                    $endtime = strtotime("+150 minutes", strtotime($row['Jam_Mulai']));
+                    echo '<td>'.date("H:i:s", $endtime).'</td>';
+                }else if ($row['sks'] = 2){
+                    $endtime = strtotime("+100 minutes", strtotime($row['Jam_Mulai']));
+                    echo '<td>'.date("H:i:s", $endtime).'</td>';
+                }
+                //echo '<td>'.$row['Jam_Mulai'].'</td>';
                 echo '<td>'.$row['ruangan'].'</td>';
                 echo '<td>'.$row['Pengampu'].'</td>';
                 echo '<td>
