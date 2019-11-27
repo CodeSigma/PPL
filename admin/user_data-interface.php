@@ -58,7 +58,7 @@
             <?php if($_GET){
                 echo '<form method="POST" action="user_data-edit.php">';
             }else{
-                echo '<form method="POST" action="user_data-add.php">';
+                echo '<form method="POST" action="user_data-insert.php">';
             }?>
             <table class="table form-interface">
                     <tbody>
