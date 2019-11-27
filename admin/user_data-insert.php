@@ -13,14 +13,17 @@
         print_r($query);
         $result = mysqli_query($db,$query);
         if(!$result){
-            die("Query gagal");
+
             mysqli_error();
         }
+        header("Location: user_data.php");
+        
+    } else {
+           header("Location: user_data-interface.php");
+
     }
 
 
-
-
-    header("Location: user_data.php");
+    
 
 ?>

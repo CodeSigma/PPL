@@ -1,9 +1,11 @@
 <?php 
     require_once("../database/db_login.php");
 
-    print_r($_POST);
-
-    $query = "INSERT INTO jadwal
+    if ($_POST['waktu_mulai']==NULL) {
+        header("Location: jadwal-add-interface.php");
+    } else {
+        # code...
+         $query = "INSERT INTO jadwal
         (Kode_MK, Hari, Kelas, Jam_Mulai, ruangan, Pengampu) Values ('{$_POST['matakuliah']}', '{$_POST['hari']}', '{$_POST['kelas']}', '{$_POST['waktu_mulai']}', '{$_POST['ruangan']}', '{$_POST['pengampu']}');
         ";
     $result = mysqli_query($db,$query);
@@ -21,6 +23,11 @@
     }else{
         header("Location: jadwal.php");
     }
+    }
+    
+
+
+   
     
 
 ?>

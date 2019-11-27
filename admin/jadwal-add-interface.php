@@ -37,7 +37,7 @@
                     <td>:</td>
                     <td><div class="form-group">
                       <select class="custom-select" name="kelas" id="kelas-dropdown" size=1>
-                        <option selected>Select one</option>
+                        <!-- <option selected>Select one</option> -->
                         <option value="A">A</option>
                         <option value="B">B</option>
                         <option value="C">C</option>
@@ -50,7 +50,7 @@
                     <td>
                         <div class="form-group">
                             <select class="custom-select" name="hari" id="">
-                                <option selected>Select one</option>
+                                <!-- <option selected>Select one</option> -->
                                 <option value="Senin">Senin</option>
                                 <option value="Selasa">Selasa</option>
                                 <option value="Rabu">Rabu</option>
@@ -89,7 +89,7 @@
                     <td>
                         <div class="form-group">
                             <select class="custom-select" name="pengampu" id="">
-                            <option selected>Select one</option>
+                            <!-- <option selected>Select one</option> -->
                                 <?php
                                     $query = "SELECT * FROM dosen";
                                     $result = mysqli_query($db, $query);
